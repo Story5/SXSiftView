@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class SXSiftView;
+@protocol SXSiftViewDelegate <NSObject>
+
+- (void)sxSiftView:(SXSiftView *)sxSiftView didSelectItemAtIndexPath:(NSIndexPath *)indexPath itemDic:(NSDictionary *)dic;
+
+@end
+
 @interface SXSiftView : UIView
+
+@property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,assign) id<SXSiftViewDelegate>delegate;
 
 @end

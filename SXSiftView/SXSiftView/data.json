@@ -1,0 +1,32 @@
+[
+  {
+    "item": [
+      {
+        "id": 30,
+        "spec_item_val": "深圳"
+      },
+      {
+        "id": 31,
+        "spec_item_val": "广州"
+      },
+      {
+        "id": 32,
+        "spec_item_val": "河南"
+      }
+    ],
+    "spec": "产地"
+  },
+  {
+    "item": [
+      {
+        "id": 118,
+        "spec_item_val": "500ml"
+      },
+      {
+        "id": 119,
+        "spec_item_val": "1000ml"
+      }
+    ],
+    "spec": "容量"
+  }
+]

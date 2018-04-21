@@ -18,16 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    float height = 200;
-    UIView *siftView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.bounds), height)];
-    siftView.backgroundColor = [UIColor redColor];
+    SXSiftView *siftView = [[SXSiftView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 500)];
+    siftView.backgroundColor = [UIColor whiteColor];
+    siftView.dataArray = [self loadData];
     [self.view addSubview:siftView];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSMutableArray *)loadData {
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"]];
+    NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    return array;
 }
 
 

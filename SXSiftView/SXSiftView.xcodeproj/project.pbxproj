@@ -14,6 +14,11 @@
 		75522AF5208ADFBC00D424DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75522AF3208ADFBC00D424DD /* LaunchScreen.storyboard */; };
 		75522AF8208ADFBC00D424DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75522AF7208ADFBC00D424DD /* main.m */; };
 		75522B01208ADFEE00D424DD /* SXSiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75522B00208ADFEE00D424DD /* SXSiftView.m */; };
+		75522B05208AE4AE00D424DD /* SXSiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75522B04208AE4AE00D424DD /* SXSiftCell.m */; };
+		75522B07208AECF400D424DD /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75522B06208AECF400D424DD /* data.json */; };
+		756331EA208AF33500FE73BC /* SXSiftSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 756331E9208AF33500FE73BC /* SXSiftSectionHeader.m */; };
+		756331ED208B003900FE73BC /* SXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 756331EC208B003900FE73BC /* SXTool.m */; };
+		756331F0208B0D9200FE73BC /* SXSiftLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 756331EF208B0D9200FE73BC /* SXSiftLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		75522AF7208ADFBC00D424DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75522AFF208ADFEE00D424DD /* SXSiftView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSiftView.h; sourceTree = "<group>"; };
 		75522B00208ADFEE00D424DD /* SXSiftView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSiftView.m; sourceTree = "<group>"; };
+		75522B03208AE4AE00D424DD /* SXSiftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSiftCell.h; sourceTree = "<group>"; };
+		75522B04208AE4AE00D424DD /* SXSiftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSiftCell.m; sourceTree = "<group>"; };
+		75522B06208AECF400D424DD /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		756331E8208AF33500FE73BC /* SXSiftSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSiftSectionHeader.h; sourceTree = "<group>"; };
+		756331E9208AF33500FE73BC /* SXSiftSectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSiftSectionHeader.m; sourceTree = "<group>"; };
+		756331EB208B003900FE73BC /* SXTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTool.h; sourceTree = "<group>"; };
+		756331EC208B003900FE73BC /* SXTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTool.m; sourceTree = "<group>"; };
+		756331EE208B0D9200FE73BC /* SXSiftLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXSiftLayout.h; sourceTree = "<group>"; };
+		756331EF208B0D9200FE73BC /* SXSiftLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXSiftLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,7 @@
 				75522AF3208ADFBC00D424DD /* LaunchScreen.storyboard */,
 				75522AF6208ADFBC00D424DD /* Info.plist */,
 				75522AF7208ADFBC00D424DD /* main.m */,
+				75522B06208AECF400D424DD /* data.json */,
 			);
 			path = SXSiftView;
 			sourceTree = "<group>";
@@ -78,8 +93,16 @@
 		75522AFE208ADFDC00D424DD /* SXSiftView */ = {
 			isa = PBXGroup;
 			children = (
+				756331EE208B0D9200FE73BC /* SXSiftLayout.h */,
+				756331EF208B0D9200FE73BC /* SXSiftLayout.m */,
 				75522AFF208ADFEE00D424DD /* SXSiftView.h */,
 				75522B00208ADFEE00D424DD /* SXSiftView.m */,
+				75522B03208AE4AE00D424DD /* SXSiftCell.h */,
+				75522B04208AE4AE00D424DD /* SXSiftCell.m */,
+				756331E8208AF33500FE73BC /* SXSiftSectionHeader.h */,
+				756331E9208AF33500FE73BC /* SXSiftSectionHeader.m */,
+				756331EB208B003900FE73BC /* SXTool.h */,
+				756331EC208B003900FE73BC /* SXTool.m */,
 			);
 			path = SXSiftView;
 			sourceTree = "<group>";
@@ -144,6 +167,7 @@
 				75522AF5208ADFBC00D424DD /* LaunchScreen.storyboard in Resources */,
 				75522AF2208ADFBC00D424DD /* Assets.xcassets in Resources */,
 				75522AF0208ADFBA00D424DD /* Main.storyboard in Resources */,
+				75522B07208AECF400D424DD /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756331F0208B0D9200FE73BC /* SXSiftLayout.m in Sources */,
 				75522AED208ADFB900D424DD /* ViewController.m in Sources */,
+				756331EA208AF33500FE73BC /* SXSiftSectionHeader.m in Sources */,
 				75522AF8208ADFBC00D424DD /* main.m in Sources */,
 				75522AEA208ADFB900D424DD /* AppDelegate.m in Sources */,
+				756331ED208B003900FE73BC /* SXTool.m in Sources */,
+				75522B05208AE4AE00D424DD /* SXSiftCell.m in Sources */,
 				75522B01208ADFEE00D424DD /* SXSiftView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
